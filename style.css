@@ -1,3 +1,77 @@
-h2:target {
-    background-color: aquamarine;
+body {
+    background-color: #181a1b;
+    height: 100vh;
+    color: white;
 }
+
+header {
+    display: flex;
+    padding: 0 10vw 0 0;
+    width: 100% - attr(padding-right);
+    justify-content: space-between;
+    background-image: url(./boingo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #3D434B;
+}
+
+#nav {
+    align-self: center;
+}
+
+#name {
+    font-size: 1.25em;
+}
+
+#job-title {
+    font-size: 0.5em;
+    color: #E4221C;
+}
+
+@media (max-width: 1100px) {
+    header {
+        background-image: none;
+    }
+}
+
+@media (max-width: 850px) {
+    #nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
+
+h1 {
+    align-self: center;
+    padding-left: 5vw;
+}
+
+#linkedin {
+    max-height: 1em;
+}
+
+h2 {
+    width: fit-content;
+}
+
+a:visited {
+    color: white;
+}
+
+h2:target {
+    animation-name: glow;
+    animation-duration: 2s;
+}
+
+@keyframes glow {
+    0% {
+      box-shadow: 0px 0px 15px 10px #5ee196;
+    }
+    100% {
+      box-shadow: 0px 0px 0px 0px #5ee196;
+    }
+  }
