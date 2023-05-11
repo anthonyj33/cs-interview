@@ -58,6 +58,10 @@ h2 {
     width: fit-content;
 }
 
+a {
+    color: white;
+}
+
 a:visited {
     color: white;
 }
