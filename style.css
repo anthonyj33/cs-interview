@@ -1,5 +1,10 @@
+html {
+    background: linear-gradient(to bottom, #3D434B, #3D434B, black);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
 body {
-    background-color: #3D434B;
     color: white;
 }
 
@@ -9,11 +14,10 @@ header {
     padding: 0 10vw 0 0;
     width: 100% - attr(padding-right);
     justify-content: space-between;
-    background-image: url(./boingo.jpeg);
+    background-image: url(./boingo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-color: #3D434B;
 }
 
 #nav {
@@ -25,7 +29,7 @@ header {
 }
 
 #job-title {
-    font-size: 0.5em;
+    font-size: 0.75em;
     color: #E4221C;
 }
 
@@ -52,6 +56,10 @@ h1 {
 
 #linkedin {
     max-height: 1em;
+}
+
+main {
+    margin: 5vw;
 }
 
 h2 {
